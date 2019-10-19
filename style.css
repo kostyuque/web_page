@@ -63,6 +63,7 @@ header ul {
 
 #content {
     width: 75%;
+
 }
 
 #sidebar,
@@ -70,6 +71,8 @@ header ul {
     margin: 15px 0;
     box-shadow: 0px 0px 5px 1px #f5c020;
     padding: 15px;
+    min-height: 920px;
+
 }
 
 #sidebar ul li a {
@@ -78,6 +81,8 @@ header ul {
     color: black;
     border-bottom: 1px dashed black;
     border-color: #efb62d;
+    font-weight: bold;
+
 }
 
 #sidebar ul li a:hover {
@@ -153,6 +158,69 @@ a {
     background: #cc9001;
 }
 
+footer {
+    width: 100%;
+    background: #4a4a4a;
+    color: white;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+}
+
+footer .container>div {
+    max-width: 260px;
+    width: 100%;
+}
+
+footer h3 {
+    margin: 0 0 15px 0;
+}
+
+footer .container {
+    align-items: flex-start
+}
+
+.f-links a {
+    display: block;
+    padding: 0 5px 0 0;
+}
+
+.f-links a:hover {
+    text-decoration: underline;
+}
+
+.form-subscribe,
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-subscribe input {
+    margin-bottom: 15px;
+    height: 25px;
+    padding: 5px;
+}
+
+.form-subscribe button {
+    background: #efb62d;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.social-links a {
+    padding: 0 15px 0 0;
+    display: block;
+    font-size: 20px;
+}
+
+.social-links {
+    padding-left: 100px;
+
+}
+
 
 
 
@@ -163,12 +231,32 @@ a {
     }
 }
 
-@media (max-width:725px) {
-    header .container {
+@media (max-width: 830px) {
+    footer>div.container {
+        flex-direction: column;
+    }
 
+    footer div.container > div {
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:725px) {
+
+    #sidebar,
+    #content {
+        min-height: auto;
+    }
+
+    header .container {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+
+
 
     header ul {
         flex-direction: column;
@@ -198,8 +286,9 @@ a {
     #content {
         width: 100%;
     }
-    #sidebar, #content {
+
+    #sidebar,
+    #content {
         text-align: center;
     }
 }
-
