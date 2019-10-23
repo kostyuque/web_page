@@ -15,6 +15,8 @@ ul {
     padding: 0;
 }
 
+
+
 .container {
     max-width: 1000px;
     flex-wrap: wrap;
@@ -58,11 +60,12 @@ header ul {
 
 
 #sidebar {
-    width: 23%;
-  }
+    width: 20%;
+    font-size: 19px;
+    }
 
 #content {
-    width: 75%;
+    width: 78%;
 
 }
 
@@ -70,7 +73,7 @@ header ul {
 #content {
     margin: 15px 0;
     box-shadow: 0px 0px 5px 1px #f5c020;
-    padding: 15px;
+    padding: 5px 15px 5px 15px;
 }
 
 #sidebar ul li a {
@@ -131,7 +134,8 @@ a {
 
 .product img {
     max-width: 100%;
-
+    min-height: 180px;
+    max-height: 181px;
 }
 
 
