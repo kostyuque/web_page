@@ -29,12 +29,14 @@ header ul li a {
     display: block;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 19px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 header ul li a:hover {
     background: #efb739;
     color: #353535;
+    box-shadow: 0 0 4px 2px #efb739;
 }
 
 header ul {
@@ -89,6 +91,7 @@ header ul {
 #sidebar ul li a:hover {
     color: #efb739;
     border-bottom: 1px dashed #efb739;
+    font-size: 21px;
 }
 
 #sidebar ul li:last-child a {
@@ -97,7 +100,8 @@ header ul {
 
 #sidebar:hover, #content:hover {
     border-color: #efb739;
-    box-shadow: 0px 0px 5px 1px #efb739;
+    box-shadow: 0px 0px 5px 2px #efb739;
+    cursor: pointer;
 }
 
 #main {
@@ -128,7 +132,7 @@ a {
     -o-transform: scale(1.02);
     -ms-transform: scale(1.02);
     transform: scale(1.02);
-    box-shadow: 0 0 3px 1px #efb739;
+    box-shadow: 0 0 5px 2px #efb739;
 }
 
 .product h2 {
@@ -150,6 +154,7 @@ a {
     padding: 5px 10px;
     cursor: pointer;
     color: white;
+    font-weight: bold;
 }
 
 .p-bottom span {
@@ -160,6 +165,7 @@ a {
 .p-bottom button:hover {
     background: #efb739;
     color: #353535;
+    box-shadow: 0 0 5px 2px #efb739;
 }
 
 footer {
@@ -194,6 +200,7 @@ footer .container {
 
 .f-links a:hover {
     color: #efb739;
+    font-size: 22px;
 }
 
 .form-subscribe, .social-links {
@@ -214,6 +221,12 @@ footer .container {
     padding: 5px 15px;
     cursor: pointer;
     color: #353535;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-subscribe button:hover {
+    box-shadow: 0 0 5px 2px #efb739;
 }
 
 .social-links a {
@@ -229,6 +242,7 @@ footer .container {
 
 .social-links a:hover {
     color: #efb739;
+    font-size: 22px;
 }
 
 footer h3 {
@@ -241,8 +255,7 @@ footer h3 {
     }
 }
 
-@media (max-width: 830px) {
-    
+@media (max-width: 900px) {
     header .container {
         flex-wrap: wrap;
         justify-content: center;
